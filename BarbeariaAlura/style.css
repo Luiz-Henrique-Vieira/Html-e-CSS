@@ -1,0 +1,143 @@
+header
+{
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+.caixa
+{
+    position: relative;
+    width: 940px; /*largura fixa,largura recomendavel a se usar*/
+    margin: 0 auto;
+
+}
+nav
+{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li
+{
+    display: inline;
+    margin: 0 0 0 15px; /*as margins tem uma sequencia numeral, que seria topo, direita, baixo e esquerda.*/
+}
+nav a
+{
+    text-transform: uppercase; /* usado para deixar a letra maiuscula.*/
+    color: black;
+    font-weight: bold; /* usado para criar um negrito*/
+    font-size: 22px;
+    text-decoration: none; /*usado para tirar sublinhados*/
+}
+
+nav a:hover /* usado para mostrar ao usuario que aquele lugar é clicavel.Quando passamos o mouse em cima do conteudo*/
+{
+    color: #C78C19;
+    text-decoration: underline;
+    
+}
+
+.produtos
+{
+    width: 940px; /* aqui colocamos a mesma largura, altura e espaçamento que o cabeçalho, para termos uma pagina centralizada*/
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+
+.produtos li
+{
+    display: inline-block; /*usamos inlineblock para modificarmos a altura e largura.*/
+    text-align: center;
+    width: 30%; /*temos 100% da pagina e para centralizarmos ela, precisamos ter aproximadamente 1/3 da pagina, e não podemos colocar desta forma, então para isso, divimos e colocamos 30% para cada imagem.*/
+    vertical-align: top;
+    margin: 0 1.5%; /* somamos 1.5 + 1.5=3, para pegarmos da largura 30%, desta forma, teremos 99% da pagina ocupada*/
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000; /* tamanho, tipo de borda, e cor.*/
+    border-radius: 10px; /*arredonda as bordas do nosso quadrado, sempre arredondando os cantos.*/
+}
+.produtos li:hover
+{
+    border-color: #C78C19;
+    color: #C78C19;
+    text-decoration: wavy;
+}
+
+.produtos li:active /* quando utilizamos o clique do mouse, ativa-lo.*/
+{
+    border-color: #088c19;
+}
+.produtos li:hover h2 /*especificamos as tag e classes para destaca-las quando passarmos o mouse em cima.*/
+{
+    font-size: 34px;
+}
+
+.produtos h2
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao
+{
+    font-size: 18px;
+
+}
+
+.produto-preço
+{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer 
+{
+    text-align: center;
+    background: url("bg.jpg"); /*quando queremos colocar uma imagem, utilizamos a url, e chamamos por parenteses.*/
+    padding: 40px 0;
+}
+
+.copyright
+{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+main
+{
+    width: 940px;
+    margin: 0 auto; 
+    /*Eu quero que tenha um espaço entre o fim do cabeçalho e o início do meu formulário, e entre do meu formulário e o início do rodapé. */
+}
+
+form
+{
+    margin: 40px 0;
+}
+
+form label, form p /*podemos usar uma virgula para chamar outros tipos de tags no css. */
+{
+    /*Por padrão, os elementos como o parágrafo são display do tipo block, ou seja, eles ocupam 100% da largura da página. O elemento do tipo inline ocupa só o tamanho do seu conteúdo.*/
+    /* todos formularios são do tipo inline, e para que fique da forma que queremos, colocaremos ele em block */
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao
+{
+    display: block;
+    margin: 0 0 20px;
+    /*A propriedade padding serve para alterarmos o espaçamento interno, entre o conteúdo e a borda. */
+    padding: 10px 25px; /*quando falamos sobre bordas, eu tenho o espaço do conteúdo, que é uma caixinha; eu tenho o espaço do espaçamento interno, que é outra caixinha; eu tenho uma borda, que é outra caixinha; e eu tenho espaçamento externo. No caso aqui, ficamos mexendo no espaçamento externo, criando uma margem. No input, eu já tenho uma borda para marcar que isso aqui uma entrada de texto. O que eu preciso agora é mexer no espaçamento interno, no padding. */
+    width: 50%;
+}
+
+.checkbox
+{
+    margin: 20px 0;
+}

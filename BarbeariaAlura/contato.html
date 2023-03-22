@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="reset.css"> <!--O reset.css reconfigura o nosso navegador, e o deixa formatado. E é sempre bom, colocar o reset antes do estilo-->
+    <link rel="stylesheet" href="style.css">
+   
+
+</head>
+    <body>
+    <header>
+         <div class="caixa"> <!--para alinharmos o div ao centro colocamos o margin em auto. fazendo o calculo da largura e dividindo por dois. E adicionando o resultado na metade de cada lado.-->
+            <h1><img src="./assets/logo.png"></h1>       
+                    <nav> <!--criamos uma tag chamada nav, para navegar com os links abaixo.-->
+                        <ul>
+                            <li><a href="index.html">Home</a> </li>
+                            <li><a href="produtos.html">Produtos</a> </li>
+                            <li><a href="contato.html">Contato</a> </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>   
+            <main>
+                <form> <!--usada para criação de formularios-->
+
+                    <label for="nomesobrenome"> Nome e Sobrenome</label> <!--label é usada para etiqueta e definir nome para inputs.-->
+                    <input type="text" id="nomesobrenome" class="input-padrao"> <!--input é utilizado para que o usuário coloque informações dele, da escolha dele.-->
+                    
+                    <label for="email"> Email </label> <!-- sempre que colocarmos um input, tbm usaremos o label, para etiquetar o input e sabermos o que precisamos. sempre usando o identificador nos dois.-->
+                    <input type="text" id="email" class="input-padrao">
+
+                    <label for="telefone">Telefone</label>
+                    <input type="text" id="telefone" class="input-padrao">
+                      
+                    <label for="mensagem">Mensagem</label>
+                    <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea> <!-- cols seria a quantidade de colunas do nosso quadrado e rows seria a quantidade de linhas do nosso quadrado.-->
+
+                    <div>
+                        <p>Como prefere o nosso contato?</p>
+
+                        <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+
+                        <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                        
+
+                        <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">Whatsapp</label>
+                        <!--tipo radio para criar bolinhas selecionaveis para o usuario. Lembrando que
+                        podemos o usar o "name" para formar um unico grupo e marcar apenas uma caixinha por vez.-->
+
+                    </div>
+
+                        <div>   
+                            <p>QUal o horario que prefere ser atendido?</p>
+                                <select> <!-- usado para colocar caixinhas de seleção para o usuário. Seguindo da tag option.-->
+                                    <option>Manhã</option>
+                                    <option>Tarde</option>
+                                    <option>Noite</option>
+                                </select>
+                        </div>
+
+                    <label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por email?</label> <!--Podemos colocar um input dentro de um label para organizar nosso codigo, tipo checkbox util para marcar caixas do que o usuario quer.-->
+
+                    <input type="submit" value="Enviar formulário"> <!--usando o tipo submit, queremos enviar o formulário ao banco de dados. Utilizamos também a propriedade value, para modificar o texto do "enviar"-->
+           
+                </form>
+            
+            
+            </main>
+            
+            
+            
+            
+             <footer> <!--tag do rodapé-->
+                <img src="./assets/logo-branco.png">
+                <p class="copyright">&copy:Copyright Barbearia Alura 2022</p>
+             </footer>
+        </body>
+</html>

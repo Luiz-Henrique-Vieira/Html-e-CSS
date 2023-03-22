@@ -1,0 +1,70 @@
+
+#banner
+{
+    /*para aumentarmos a largura da imagem na pagina, usaremos esse comando: */
+   width: 100%;
+}
+.principal
+{
+    background: #CCCCCC;
+    padding: 30px;
+}
+.titulo-principal
+{
+    padding-left: 20px;
+}
+
+/*sempre chamar uma tag,e colocar as chaves para colocar uma propriedade sobre ela. como todos exemplos nesse codigo*/
+
+.titulo-centralizado
+{
+     text-align: center;
+     margin: 40px;
+}
+
+/*alinhando o texto na pagina*/
+
+p{
+    text-align: center;
+}
+#missao {
+    font-size: 20px;
+}
+/*especificando um codigo para definir a cor em css*/
+
+em strong {
+    color: red;
+}
+
+.itens
+{
+    font-style: italic;
+}
+/*chamamos uma classe usando um . e assim o nome que definimos a ela.*/
+.beneficios
+{
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+ul
+{
+    display: inline-block;
+    /*Todos os elementos são alinhados pela linha de baixo e queremos que sejam alinhados pela linha de cima.Então, usamos o:*/
+    vertical-align: top;
+    width: 20%;
+    margin-right: 20%
+}
+
+.imagembeneficios
+{
+    width: 50%;
+
+}
+
+
+
+
+
+
+/*é importante lembrar que, sempre que chamarmos uma tag, tanto usando o jogo da velha, como chamando uma tag em si, é bom alinhar o codigo com o index, sempre chamando as tags em ordem, para não deixarmos o codigo style externo confuso. */
